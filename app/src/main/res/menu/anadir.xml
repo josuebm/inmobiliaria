@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.josu.inmobiliaria.Anadir" >
+    <item android:id="@+id/action_camara"
+        android:icon="@drawable/ic_action_camera"
+        android:title="@string/action_anadir"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+</menu>
