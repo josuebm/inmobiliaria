@@ -32,7 +32,7 @@ public class Principal extends Activity {
     private final int SECUNDARIA = 2;
     private final int ANADIR = 3;
     private final int EDITAR = 4;
-    ImageView ivFoto;
+    private ImageView ivFoto;
     int posicion, contador;
 
     @Override

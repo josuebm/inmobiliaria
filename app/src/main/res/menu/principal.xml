@@ -6,11 +6,4 @@
         android:title="@string/action_anadir"
         android:orderInCategory="100"
         android:showAsAction="ifRoom" />
-    <!--
-    <item android:id="@+id/action_editar"
-        android:icon="@drawable/ic_action_edit"
-        android:title="@string/action_editar"
-        android:orderInCategory="100"
-        android:showAsAction="ifRoom" />
-    -->
 </menu>

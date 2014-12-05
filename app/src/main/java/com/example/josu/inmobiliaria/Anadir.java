@@ -71,16 +71,16 @@ public class Anadir extends Activity {
             if(!lista.get(posicion).getFotos().isEmpty())
                 fotos = lista.get(posicion).getFotos();
 
-            tostada(lista.get(posicion).getFotos().size()+"");
             etLocalidad.setText(lista.get(posicion).getLocalidad());
             etDireccion.setText(lista.get(posicion).getDireccion());
             etPrecio.setText(lista.get(posicion).getPrecio() + " €");
             spHabitaciones.setSelection(lista.get(posicion).getHabitaciones());
             spTipo.setSelection(lista.get(posicion).getTipo());
-            boton.setText("Editar");
+            boton.setText(getResources().getString(R.string.action_editar));
             id = lista.get(posicion).getId();
         }
         else{
+            boton.setText(getResources().getString(R.string.action_anadir));
             if(lista.size() == 0)
                 id = 0;
             else
@@ -168,7 +168,7 @@ public class Anadir extends Activity {
             numFotos++;
             if (tvFotos.getVisibility() == View.INVISIBLE)
                 tvFotos.setVisibility(View.VISIBLE);
-            tvFotos.setText(numFotos + " foto(s) añadidas");
+            tvFotos.setText(numFotos + " " + getResources().getString(R.string.fotos_anadidas));
             fotos.add(archivo.getPath());
         }
     }
